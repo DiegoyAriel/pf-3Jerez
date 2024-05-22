@@ -1,0 +1,12 @@
+footer {
+    height: 70px;
+    background-color: $primary-color;
+    color: $secundary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        margin: 0;
+        font-size: $desktop-subtittle;
+    }
+}
