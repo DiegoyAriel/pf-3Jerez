@@ -1,0 +1,13 @@
+header{
+    height:22vh;
+    background-color: $primary-color;
+    h1{
+        padding: 20px 0px 5px 50px;
+        color: $secundary-color;
+        font-size: $desktop-tittle;
+    }
+    p{
+        padding: 0 0 0 50px;
+        font-size: $desktop-subtittle;
+    }
+}

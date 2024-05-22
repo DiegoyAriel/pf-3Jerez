@@ -4,17 +4,81 @@
   font-family: "Reddit Mono", monospace;
 }
 
+header {
+  height: 22vh;
+  background-color: rgb(253, 171, 183);
+}
+header h1 {
+  padding: 20px 0px 5px 50px;
+  color: rgb(245, 232, 232);
+  font-size: 50px;
+}
+header p {
+  padding: 0 0 0 50px;
+  font-size: 20px;
+}
+
+main {
+  height: 68vh;
+  background-color: rgb(245, 232, 232);
+}
+
 footer {
-  height: 70px;
-  background-color: rgb(255, 185, 196);
-  color: white;
+  height: 10vh;
+  background-color: rgb(253, 171, 183);
+  color: rgb(245, 232, 232);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 footer p {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+#hero {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 10% 40% 40%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "tittle tittle" "magic writting" "advice orientation";
+}
+#hero div {
+  grid-area: tittle;
+  margin: 20px;
+}
+#hero #magic {
+  grid-area: magic;
+}
+#hero #writting {
+  grid-area: writting;
+}
+#hero #advice {
+  grid-area: advice;
+}
+#hero #orientation {
+  grid-area: orientation;
+}
+#hero .cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+}
+#hero .cat button {
+  border-color: rgb(221, 188, 188);
+  background-color: rgb(230, 52, 82);
+  color: rgb(245, 232, 232);
+  padding: 10px;
+  margin-top: 10px;
+}
+#hero .cat h3 {
+  font-size: 20px;
+}
+#hero .cat p {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+#hero{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 10% 40% 40%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "tittle tittle"
+    "magic writting"
+    "advice orientation";
+    div{
+        grid-area: tittle;
+        margin: 20px;
+    }
+    #magic{
+        grid-area: magic;
+    }
+    #writting{
+        grid-area: writting;
+    }
+    #advice{
+        grid-area: advice;
+    }
+    #orientation{
+        grid-area: orientation;
+    }
+    .cat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+        text-align: center;
+        button{
+            border-color: rgb(221, 188, 188);
+            background-color: rgb(230, 52, 82);
+            color: $secundary-color;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        h3{
+            font-size: $desktop-subtittle;
+        }
+        p{
+            font-size: $desktop-text;
+        }
+    }
+}
