@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 22vh;
+  height: 30vh;
   background-color: rgb(253, 171, 183);
 }
 header h1 {
@@ -19,7 +19,7 @@ header p {
 }
 
 main {
-  height: 68vh;
+  height: 60vh;
   background-color: rgb(245, 232, 232);
 }
 
@@ -68,7 +68,7 @@ footer p {
   text-align: center;
 }
 #hero .cat button {
-  border-color: rgb(221, 188, 188);
+  border-color: rgb(255, 255, 255);
   background-color: rgb(230, 52, 82);
   color: rgb(245, 232, 232);
   padding: 10px;
@@ -79,6 +79,56 @@ footer p {
 }
 #hero .cat p {
   font-size: 16px;
+}
+
+.magic_header {
+  background-color: rgb(167, 51, 151);
+  color: rgb(236, 223, 148);
+}
+.magic_header button {
+  margin: 10px 30px;
+  padding: 10px;
+  background-color: rgb(236, 223, 148);
+  border-color: white;
+}
+
+.magic_main {
+  background-color: rgb(216, 184, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.magic_main img {
+  height: 70%;
+  margin-bottom: 10px;
+}
+.magic_main #questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.magic_main #questions #button {
+  background-color: rgb(167, 51, 151);
+  padding: 10px;
+  color: rgb(236, 223, 148);
+}
+.magic_main #userQuestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.magic_main #userQuestions #button {
+  background-color: rgb(167, 51, 151);
+  padding: 10px;
+  color: rgb(236, 223, 148);
+}
+
+.magic_footer {
+  background-color: rgb(167, 51, 151);
+  color: rgb(236, 223, 148);
 }
 
 /*# sourceMappingURL=main.css.map */

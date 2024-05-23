@@ -1,0 +1,48 @@
+.magic_header{
+    background-color: $primary-color1;
+    color: $secundary-color1;
+    button{
+        margin: 10px 30px;
+        padding: 10px;
+        background-color: $secundary-color1;
+        border-color: white;
+    }
+}
+.magic_main{
+    background-color: rgb(216, 184, 214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        height: 70%;
+        margin-bottom: 10px;
+    }
+    #questions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #button{
+            background-color: $primary-color1;
+            padding: 10px;
+            color: $secundary-color1;
+        }
+    }
+    #userQuestions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #button{
+            background-color: $primary-color1;
+            padding: 10px;
+            color: $secundary-color1;
+        }
+    }
+    
+}
+.magic_footer{
+    background-color: $primary-color1;
+    color:$secundary-color1
+}
