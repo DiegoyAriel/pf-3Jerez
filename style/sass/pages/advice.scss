@@ -1,0 +1,45 @@
+.advice_header{
+    background-color: $primary-color4;
+    color: $secundary-color4;
+    button{
+        margin: 10px 30px;
+        padding: 10px;
+        background-color: rgb(224, 162, 68);
+        border-color: white;
+        color: white;
+    }
+}
+.advice_main{
+    background-color: rgb(245, 241, 194);
+    color: $secundary-color4;
+    display: flex;
+    flex-direction: column;
+    #laCasan{
+        display: flex;
+        justify-content: center;
+        height: 70%;
+        img{
+            margin: 20px;
+        }
+    }
+    #options{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        .button{
+            color: white;
+            margin: 10px 30px;
+            padding: 10px;
+            background-color: rgb(224, 162, 68);
+            border-color: white;
+        }
+        #hide{
+            display: none;
+            align-items: center;
+        }
+    }
+}
+.advice_footer{
+    background-color: $primary-color4;
+    color: $secundary-color4;
+}

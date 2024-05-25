@@ -84,6 +84,54 @@ footer p {
   font-size: 14px;
 }
 
+.advice_header {
+  background-color: rgb(231, 217, 13);
+  color: rgb(111, 114, 57);
+}
+.advice_header button {
+  margin: 10px 30px;
+  padding: 10px;
+  background-color: rgb(224, 162, 68);
+  border-color: white;
+  color: white;
+}
+
+.advice_main {
+  background-color: rgb(245, 241, 194);
+  color: rgb(111, 114, 57);
+  display: flex;
+  flex-direction: column;
+}
+.advice_main #laCasan {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+}
+.advice_main #laCasan img {
+  margin: 20px;
+}
+.advice_main #options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.advice_main #options .button {
+  color: white;
+  margin: 10px 30px;
+  padding: 10px;
+  background-color: rgb(224, 162, 68);
+  border-color: white;
+}
+.advice_main #options #hide {
+  display: none;
+  align-items: center;
+}
+
+.advice_footer {
+  background-color: rgb(231, 217, 13);
+  color: rgb(111, 114, 57);
+}
+
 .magic_header {
   background-color: rgb(167, 51, 151);
   color: rgb(236, 223, 148);
@@ -174,7 +222,7 @@ footer p {
 }
 .orientation_main .personal #options #miau {
   background-color: rgb(231, 217, 13);
-  color: rgb(80, 83, 29);
+  color: rgb(111, 114, 57);
 }
 .orientation_main .personal #options button {
   padding: 10px;
