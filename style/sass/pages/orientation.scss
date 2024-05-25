@@ -1,0 +1,80 @@
+.orientation_header{
+    background-color: $primary_color3;
+    color: $secundary_color3;
+    button{
+        margin: 10px 30px;
+        padding: 10px;
+        background-color: $secundary-color3;
+        border-color: white;
+    }
+}
+.orientation_main{
+    background-color: rgb(186, 243, 243);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .personal{
+        padding: 20px;
+        #options{
+            padding: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            #magic{
+                background-color: $primary-color1;
+                color: $secundary-color1;
+            }
+            #cathspiare{
+                background-color: $primary-color2;
+                color: $secundary-color2;
+            }
+            #ariel{
+                background-color: $primary-color3;
+                color: $secundary-color3;
+            }
+            #miau{
+                background-color: $primary-color4;
+                color: $secundary-color4;
+            }
+            button{
+                padding: 10px;
+                border-color: white;
+            }
+        }
+        #information{
+            display: flex;
+            flex-direction: column;
+            .description{
+                p{
+                    font-size: $desktop-text;
+                    margin-top: 5px;
+                }
+                display: flex;
+                h3{
+                    margin: 10px;
+                    font-size: $desktop-subtittle;
+                }
+                .data{
+                    margin: 5px 10px;
+                    font-size: $desktop-text;
+                }
+            }
+            }
+            
+    }
+    .owner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            height: 50vh;
+        }
+        h2{
+            font-size: $desktop-text;
+        }
+    
+    }
+}
+.orientation_footer{
+    background-color: $primary_color3;
+    color: $secundary_color3;
+}
