@@ -103,9 +103,22 @@ footer p {
   height: 70%;
   margin-bottom: 10px;
 }
-.magic_main #questions {
+.magic_main #nameAsking {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.magic_main #nameAsking #button {
+  background-color: rgb(167, 51, 151);
+  padding: 10px;
+  color: rgb(236, 223, 148);
+  margin: 5px;
+}
+.magic_main #questions {
+  display: none;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -113,17 +126,7 @@ footer p {
   background-color: rgb(167, 51, 151);
   padding: 10px;
   color: rgb(236, 223, 148);
-}
-.magic_main #userQuestions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.magic_main #userQuestions #button {
-  background-color: rgb(167, 51, 151);
-  padding: 10px;
-  color: rgb(236, 223, 148);
+  margin: 5px;
 }
 
 .magic_footer {

@@ -18,28 +18,31 @@
         height: 70%;
         margin-bottom: 10px;
     }
+    #nameAsking{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        #button{
+            background-color: $primary-color1;
+            padding: 10px;
+            color: $secundary-color1;
+            margin: 5px;
+        }
+    }
     #questions{
+        display: none;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         #button{
             background-color: $primary-color1;
             padding: 10px;
             color: $secundary-color1;
+            margin: 5px;
         }
-    }
-    #userQuestions{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        #button{
-            background-color: $primary-color1;
-            padding: 10px;
-            color: $secundary-color1;
-        }
-    }
+    }  
     
 }
 .magic_footer{

@@ -17,11 +17,14 @@
     </header>
     <main class="magic_main">
         <img src="https://img.freepik.com/fotos-premium/gato-adivino-bola-cristal-magica-ia-generativa_87561-1711.jpg?w=740" alt="fortune teller cat">
-        <div id="questions">
-            <p id="magic_dialog"> First, please tell me your name</p>
-            <p id="first_question"></p>
-            <form>
+        <div id="Interactive">
+            <p id="magicDialog"> First, please tell me your name</p>
+            <form id="nameAsking">
                 <input type="text" id="name" required placeholder="Write your name">
+                <input type="submit" value="submit" id="button">
+            </form>
+            <form id="questions" style="display: none;">
+                <input type="text" id="question" required placeholder="Write your question">
                 <input type="submit" value="submit" id="button">
             </form>
         </div>
