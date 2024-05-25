@@ -1,12 +1,15 @@
 #hero{
     display: grid;
     height: 100%;
-    grid-template-rows: 10% 40% 40%;
+    grid-template-rows: 15% 40% 40%;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "tittle tittle"
     "magic writting"
     "advice orientation";
+    h2{
+        font-size: $desktop-subtittle;
+    }
     div{
         grid-area: tittle;
         margin: 20px;
@@ -35,7 +38,7 @@
             background-color: rgb(230, 52, 82);
             color: $secundary-color;
             padding: 10px;
-            margin-top: 10px;
+            margin-top: 8px;
         }
         h3{
             font-size: $desktop-subtittle;

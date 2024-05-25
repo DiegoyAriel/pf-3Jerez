@@ -1,0 +1,86 @@
+.writting_header{
+    background-color: $primary-color2;
+    color: $secundary-color2;
+    button{
+        margin: 10px 30px;
+        padding: 10px;
+        background-color: $secundary-color2;
+        border-color: white;
+    }
+}
+.writting_main{
+    background-color: rgb(243, 159, 159);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh;
+    grid-template-areas: 
+        "question answer";
+    .question{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+        h2{
+            font-size: $desktop-subtittle;
+            color: $primary-color2
+        }
+        img{
+            height: 70%;
+            margin: 10px;
+        }
+        #wordsAsking{
+            display: none;
+            flex-direction: row;
+            label{
+                margin-right: 10px;
+                text-align: center;
+            }
+            .button{
+                background-color: $primary-color2;
+                padding: 10px;
+                color: $secundary-color2;
+                margin: 5px;
+                }
+             }
+        }
+        #nameAsking{
+            display:flex;
+            flex-direction: row;
+            label{
+                margin-right: 10px;
+                text-align: center;
+            }
+            .button{
+                background-color: $primary-color2;
+                padding: 10px;
+                color: $secundary-color2;
+                margin: 5px;
+                }
+             }
+        }
+    
+    .answer{
+        grid-area: answer;
+        background-color: black;
+        font-family: monospace;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        #answers{
+            display: flex;
+            justify-content: center;
+            border-right: 4px solid;
+            flex-wrap: wrap;
+            width: 40ch;
+        }
+    }
+    
+
+ 
+.writting_footer{
+    background-color: $primary-color2;
+    color:$secundary-color2;
+}

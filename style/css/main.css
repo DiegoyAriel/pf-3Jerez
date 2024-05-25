@@ -15,7 +15,7 @@ header h1 {
 }
 header p {
   padding: 0 0 0 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 main {
@@ -33,15 +33,18 @@ footer {
 }
 footer p {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #hero {
   display: grid;
   height: 100%;
-  grid-template-rows: 10% 40% 40%;
+  grid-template-rows: 15% 40% 40%;
   grid-template-columns: 50% 50%;
   grid-template-areas: "tittle tittle" "magic writting" "advice orientation";
+}
+#hero h2 {
+  font-size: 18px;
 }
 #hero div {
   grid-area: tittle;
@@ -72,13 +75,13 @@ footer p {
   background-color: rgb(230, 52, 82);
   color: rgb(245, 232, 232);
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 #hero .cat h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 #hero .cat p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .magic_header {
@@ -117,7 +120,6 @@ footer p {
 }
 .magic_main #questions {
   display: none;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -132,6 +134,91 @@ footer p {
 .magic_footer {
   background-color: rgb(167, 51, 151);
   color: rgb(236, 223, 148);
+}
+
+.writting_header {
+  background-color: rgb(153, 43, 16);
+  color: rgb(235, 185, 139);
+}
+.writting_header button {
+  margin: 10px 30px;
+  padding: 10px;
+  background-color: rgb(235, 185, 139);
+  border-color: white;
+}
+
+.writting_main {
+  background-color: rgb(243, 159, 159);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60vh;
+  grid-template-areas: "question answer";
+}
+.writting_main .question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.writting_main .question h2 {
+  font-size: 18px;
+  color: rgb(153, 43, 16);
+}
+.writting_main .question img {
+  height: 70%;
+  margin: 10px;
+}
+.writting_main .question #wordsAsking {
+  display: none;
+  flex-direction: row;
+}
+.writting_main .question #wordsAsking label {
+  margin-right: 10px;
+  text-align: center;
+}
+.writting_main .question #wordsAsking .button {
+  background-color: rgb(153, 43, 16);
+  padding: 10px;
+  color: rgb(235, 185, 139);
+  margin: 5px;
+}
+.writting_main #nameAsking {
+  display: flex;
+  flex-direction: row;
+}
+.writting_main #nameAsking label {
+  margin-right: 10px;
+  text-align: center;
+}
+.writting_main #nameAsking .button {
+  background-color: rgb(153, 43, 16);
+  padding: 10px;
+  color: rgb(235, 185, 139);
+  margin: 5px;
+}
+
+.answer {
+  grid-area: answer;
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.answer #answers {
+  display: flex;
+  justify-content: center;
+  border-right: 4px solid;
+  flex-wrap: wrap;
+  width: 40ch;
+}
+
+.writting_footer {
+  background-color: rgb(153, 43, 16);
+  color: rgb(235, 185, 139);
 }
 
 /*# sourceMappingURL=main.css.map */

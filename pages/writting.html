@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../style/css/main.css">
+    <title>Cat Village | Writting</title>
+</head>
+<body>
+    <header class="writting_header"> 
+        <h1>Cathespiare</h1>
+        <p> Let´s Create our story together</p>
+        <a href="../index.html"><button>Home</button></a>
+    </header>
+    <main class="writting_main">
+        <div class="question">
+            <h2> You give me words and I´ll give you the story</h2>        
+            <img src="https://img.freepik.com/fotos-premium/gato-escritor-tomando-notas-papel_982005-4562.jpg?w=360" alt="writter cat">
+            <form id="nameAsking">
+                <label for="name">First, give me your name</label>
+                <input type="text" id="name" required placeholder="Write your name">
+                <input type="submit" value="Submit" class="button">
+            </form>
+            <form id="wordsAsking">
+                <label for="words" id="writtingDialog">Give me a season of the year</label>
+                <input type="text" id="words" required placeholder="Write a season">
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+             </form> 
+        </div>
+        <div class="answer">
+            <p id="answers"></p>
+        </div>
+    </main>
+    <footer class="writting_footer">
+        <p>Cat Village - All rights reserved</p>
+    </footer>
+    <script src="../js/general.js"></script>
+    <script src="../js/pages/writting.js"></script>
+</body>
+</html>
