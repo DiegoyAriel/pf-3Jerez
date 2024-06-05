@@ -1,23 +1,32 @@
-
-
 //Global variables
 let magicDialog = document.getElementById("magicDialog");
-
-// Asking for name
+let user = localStorage.getItem("user");
 let nameAsking = document.getElementById("nameAsking");
-nameAsking.addEventListener("submit", welcoming);
+let questions = document.getElementById("questions");
 
-function welcoming(e){
+
+if (user){
+    nameAsking.style.display = "none";
+    questions.style.display = "flex";
+    let userWelcome= "Hello " + user + ", please, ask me your question. Remember, just Yes/No questions";
+    talk("magicDialog", userWelcome);
+}
+else{
+    nameAsking.addEventListener("submit", nameAsk)
+}
+function nameAsk(e){
     e.preventDefault();
     let userName = document.getElementById("name").value;
-    let userWelcome= "Hello " + userName + ", please, ask me your question. Remember, just Yes/No questions";
+    localStorage.setItem("user", userName);
+    user = localStorage.getItem("user");
+    let userWelcome= "Hello " + user + ", please, ask me your question. Remember, just Yes/No questions";
     talk("magicDialog", userWelcome);
     nameAsking.style.display = "none";
     questions.style.display = "flex";
 };
 
+
 //asking questions
-let questionAsking = document.getElementById("questionAsking")
 questions.addEventListener("submit", magic);
 
 // Primary Function

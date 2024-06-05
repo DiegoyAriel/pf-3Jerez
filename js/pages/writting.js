@@ -2,25 +2,37 @@
 const words=[];
 let control = 0
 let textArea = document.getElementById("words");
-let userName= ""
+let user = localStorage.getItem("user");
+let userName;
 
 //NameAsking
 
 let nameAsking = document.getElementById("nameAsking");
-nameAsking.addEventListener("submit", welcoming);
+
+
+if (user){
+    nameAsking.style.display = "none";
+    wordsAsking.style.display = "flex";
+}
+else{
+    nameAsking.addEventListener("submit", welcoming);
+}
 
 function welcoming(e){
     e.preventDefault();
     userName = document.getElementById("name").value;
+    localStorage .setItem("user", userName);
+    user = localStorage.getItem("user");
     nameAsking.style.display = "none";
     wordsAsking.style.display = "flex";
-    return userName;
 };
+
+/*Name */
+
 
 //AddWords
 
 wordsAsking.addEventListener("submit", addWord);
-
 function addWord(e){
     e.preventDefault();
     let word = textArea.value;
@@ -61,7 +73,7 @@ else{
 };
 };
 function pencil(){
-    let story = "There was a dark night of " + words[0] + " when " + userName + " enters to " + words[1] + ", suddenly, " + userName + " saw at the end of the " + words[1] + " a person, who was " + words[2] + ". In the right corner, there was a big statue " + userName + " said, it´s a " + words[3] + " statue. Suddenly, the statue stand up, ran and cut the person´s " + words[4] + ". The only thing that "+ userName + " can do, was " + words[5];
+    let story = "There was a dark night of " + words[0] + " when " + user + " enters to " + words[1] + ", suddenly, " + user + " saw at the end of the " + words[1] + " a person, who was " + words[2] + ". In the right corner, there was a big statue " + user + " said, it´s a " + words[3] + " statue. Suddenly, the statue stand up, ran and cut the person´s " + words[4] + ". The only thing that "+ user + " can do, was " + words[5];
     return story;
 };
 
