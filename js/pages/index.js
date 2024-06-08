@@ -28,11 +28,11 @@ document.getElementById("advice").addEventListener("click", function(e) {
     prevent(e);
     Swal.fire({
         title: "Thank you!",
-        text: "You chose Ariel, our Owner!",
+        text: "You chose Miau La Casan!",
         icon: "info"
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = "./pages/orientation.html";
+            window.location.href = "./pages/advices.html";
         }
     });
 });
@@ -41,11 +41,11 @@ document.getElementById("orientation").addEventListener("click", function(e) {
     prevent(e);
     Swal.fire({
         title: "Thank you!",
-        text: "You chose Miau La Casan!",
+        text: "You chose Ariel, our Owner!",
         icon: "info"
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = "./pages/advices.html";
+            window.location.href = "./pages/orientation.html";
         }
     });
 });
